@@ -18,3 +18,4 @@ C:\FPT\2024 SP\H6187388-Programming\ALTP_GITHUB\se_07102_programming_altp\ALTP\o
 C:\FPT\2024 SP\H6187388-Programming\ALTP_GITHUB\se_07102_programming_altp\ALTP\obj\Debug\ALTP.csproj.CoreCompileInputs.cache
 C:\FPT\2024 SP\H6187388-Programming\ALTP_GITHUB\se_07102_programming_altp\ALTP\obj\Debug\ALTP.exe
 C:\FPT\2024 SP\H6187388-Programming\ALTP_GITHUB\se_07102_programming_altp\ALTP\obj\Debug\ALTP.pdb
+C:\FPT\2024 SP\H6187388-Programming\ALTP_GITHUB\se_07102_programming_altp\ALTP\obj\Debug\ALTP.PlayForm.resources

@@ -38,6 +38,11 @@ namespace ALTP
             panel1.Name = "panel1";
             panel1.Size = new System.Drawing.Size(236, 71);
             panel1.TabIndex = 1;
+
+
+            //panel1.Click += StartGame_Click;
+            panel1.MouseClick += StartGame_Click;
+            //panel12.Click += StartGame_Click;
             this.Controls.Add(panel1);
 
 
@@ -45,9 +50,12 @@ namespace ALTP
             panel12.Name = "panel12";
             panel12.Size = new System.Drawing.Size(236, 71);
             panel12.TabIndex = 1;
+            panel12.Click += StartGame_Click;
+
             this.Controls.Add(panel12);
 
-            timer = new System.Threading.Timer(TogglePanelVisibility, null, 0, 500);
+            timer = new System.Threading.Timer(TogglePanelVisibility, null, 0, 2000);
+
 
 
             //timer = new System.Threading.Timer(ChangePanelColor, null, 0, 2000);
@@ -164,7 +172,17 @@ namespace ALTP
 
 
         }
-       
+        private void StartGame_Click(object sender, EventArgs e)
+        {
+            // Perform actions when the panel is clicked
+            //MessageBox.Show("Panel clicked!");
+
+            PlayForm playForm = new PlayForm();
+            playForm.Show();
+            this.Hide();
+
+            // Add your custom logic here
+        }
 
         private void TogglePanelVisibility(object state)
         {
