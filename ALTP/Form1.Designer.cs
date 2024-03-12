@@ -79,7 +79,6 @@ namespace ALTP
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBox1;
-        private GradientColorPanel panel1;
         private Label label1;
     }
 }

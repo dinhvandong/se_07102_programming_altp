@@ -5,21 +5,34 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Threading;
 
 namespace ALTP
 {
     public partial class Form1 : Form
     {
+        private bool isPanelVisible;
+
+        private System.Threading.Timer timer;
+        private bool isColorChanged;
+        ALTP.GradientColorPanel panel1 = new ALTP.GradientColorPanel()
+        {
+            StartColor = Color.Red,
+            EndColor = Color.Orange
+        };
+
+        ALTP.GradientColorPanel panel12 = new ALTP.GradientColorPanel()
+        {
+            StartColor = Color.Green,
+            EndColor = Color.Yellow
+        };
         public Form1()
         {
 
-            ALTP.GradientColorPanel panel1 = new ALTP.GradientColorPanel()
-            {
-                StartColor = Color.Red,
-                EndColor = Color.Orange
-            };
+           
            // this.panel1.Controls.Add(this.label1);
             panel1.Location = new System.Drawing.Point(31, 91);
             panel1.Name = "panel1";
@@ -27,6 +40,17 @@ namespace ALTP
             panel1.TabIndex = 1;
             this.Controls.Add(panel1);
 
+
+            panel12.Location = new System.Drawing.Point(31, 91);
+            panel12.Name = "panel12";
+            panel12.Size = new System.Drawing.Size(236, 71);
+            panel12.TabIndex = 1;
+            this.Controls.Add(panel12);
+
+            timer = new System.Threading.Timer(TogglePanelVisibility, null, 0, 500);
+
+
+            //timer = new System.Threading.Timer(ChangePanelColor, null, 0, 2000);
 
             ALTP.GradientColorPanel panel2 = new ALTP.GradientColorPanel()
             {
@@ -81,6 +105,18 @@ namespace ALTP
             CenterControlInPanel(label, panel1);
 
 
+            Label label12 = new Label()
+            {
+                Text = "Bắt đầu",
+                AutoSize = true,
+                ForeColor = Color.White,
+                BackColor = Color.Transparent,
+                Font = new Font(FontFamily.GenericSansSerif, 16f, FontStyle.Bold),
+                TextAlign = ContentAlignment.MiddleCenter
+            };
+
+            panel12.Controls.Add(label12);
+            CenterControlInPanel(label12, panel12);
 
             Label label2 = new Label()
             {
@@ -128,8 +164,45 @@ namespace ALTP
 
 
         }
+       
+
+        private void TogglePanelVisibility(object state)
+        {
+
+            if (panel1.InvokeRequired)
+            {
+                panel1.Invoke(new MethodInvoker(delegate { TogglePanelVisibility(state); }));
+            }
+            else
+            {
+                isPanelVisible = !isPanelVisible;
+                panel1.Visible = isPanelVisible;
+            }
+            /*
+                        isPanelVisible = !isPanelVisible;
+                        if(isPanelVisible )
+                        {
+                            panel1.Visible = false;
+                            panel12.Visible = true;
 
 
+                        }
+                        else
+                        {
+                            panel1.Visible = true;
+                            panel12.Visible = false;
+
+                        }*/
+            /* if (panel1.InvokeRequired)
+             {
+                 panel1.Invoke(new MethodInvoker(TogglePanelVisibility));
+             }
+             else
+             {
+                 isPanelVisible = !isPanelVisible;
+                 panel1.Visible = isPanelVisible;
+             }*/
+        }
         private void CenterControlInPanel(Control control, Panel panel)
         {
             control.Anchor = AnchorStyles.None;

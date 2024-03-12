@@ -8,3 +8,13 @@ C:\FPT\2024 SP\H6187388-Programming\ALTP\ALTP\obj\Debug\ALTP.csproj.GenerateReso
 C:\FPT\2024 SP\H6187388-Programming\ALTP\ALTP\obj\Debug\ALTP.csproj.CoreCompileInputs.cache
 C:\FPT\2024 SP\H6187388-Programming\ALTP\ALTP\obj\Debug\ALTP.exe
 C:\FPT\2024 SP\H6187388-Programming\ALTP\ALTP\obj\Debug\ALTP.pdb
+C:\FPT\2024 SP\H6187388-Programming\ALTP_GITHUB\se_07102_programming_altp\ALTP\bin\Debug\ALTP.exe.config
+C:\FPT\2024 SP\H6187388-Programming\ALTP_GITHUB\se_07102_programming_altp\ALTP\bin\Debug\ALTP.exe
+C:\FPT\2024 SP\H6187388-Programming\ALTP_GITHUB\se_07102_programming_altp\ALTP\bin\Debug\ALTP.pdb
+C:\FPT\2024 SP\H6187388-Programming\ALTP_GITHUB\se_07102_programming_altp\ALTP\obj\Debug\ALTP.csproj.AssemblyReference.cache
+C:\FPT\2024 SP\H6187388-Programming\ALTP_GITHUB\se_07102_programming_altp\ALTP\obj\Debug\ALTP.Form1.resources
+C:\FPT\2024 SP\H6187388-Programming\ALTP_GITHUB\se_07102_programming_altp\ALTP\obj\Debug\ALTP.Properties.Resources.resources
+C:\FPT\2024 SP\H6187388-Programming\ALTP_GITHUB\se_07102_programming_altp\ALTP\obj\Debug\ALTP.csproj.GenerateResource.cache
+C:\FPT\2024 SP\H6187388-Programming\ALTP_GITHUB\se_07102_programming_altp\ALTP\obj\Debug\ALTP.csproj.CoreCompileInputs.cache
+C:\FPT\2024 SP\H6187388-Programming\ALTP_GITHUB\se_07102_programming_altp\ALTP\obj\Debug\ALTP.exe
+C:\FPT\2024 SP\H6187388-Programming\ALTP_GITHUB\se_07102_programming_altp\ALTP\obj\Debug\ALTP.pdb
