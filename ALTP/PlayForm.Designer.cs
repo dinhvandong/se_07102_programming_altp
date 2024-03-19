@@ -127,6 +127,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Name = "PlayForm";
             this.Text = "PlayForm";
+            this.Load += new System.EventHandler(this.PlayForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

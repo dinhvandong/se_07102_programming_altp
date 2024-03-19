@@ -168,7 +168,10 @@ namespace ALTP
             CenterControlInPanel(label4, panel4);
 
             InitializeComponent();
-          
+
+
+
+
 
 
         }
@@ -176,10 +179,10 @@ namespace ALTP
         {
             // Perform actions when the panel is clicked
             //MessageBox.Show("Panel clicked!");
-
-            PlayForm playForm = new PlayForm();
-            playForm.Show();
             this.Hide();
+            PlayForm playForm = new PlayForm();
+            playForm.ShowDialog();
+            this.Close();
 
             // Add your custom logic here
         }
@@ -234,6 +237,24 @@ namespace ALTP
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+            // Calculate the center position of the screen
+            int screenWidth = Screen.PrimaryScreen.Bounds.Width;
+            int screenHeight = Screen.PrimaryScreen.Bounds.Height;
+            int formWidth = this.Width;
+            int formHeight = this.Height;
+
+            int left = (screenWidth - formWidth) / 2;
+            int top = (screenHeight - formHeight) / 2;
+
+            // Set the form's location to center screen
+            this.Location = new Point(left, top);
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
         }
     }
 }

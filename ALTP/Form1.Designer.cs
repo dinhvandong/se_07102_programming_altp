@@ -34,7 +34,6 @@ namespace ALTP
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-           // this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -47,10 +46,6 @@ namespace ALTP
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
-            // panel1
-            // 
-           
             // 
             // label1
             // 
@@ -70,8 +65,8 @@ namespace ALTP
             this.Controls.Add(this.pictureBox1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-          
             this.ResumeLayout(false);
 
         }
