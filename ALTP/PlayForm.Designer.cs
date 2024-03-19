@@ -30,11 +30,12 @@
         {
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lb_question = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -52,21 +53,21 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.lb_question);
             this.panel1.Location = new System.Drawing.Point(285, 310);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(676, 80);
             this.panel1.TabIndex = 1;
             // 
-            // label1
+            // lb_question
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(34, 30);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(261, 25);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Đâu là thủ đô của Nhật Bản?";
+            this.lb_question.AutoSize = true;
+            this.lb_question.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_question.Location = new System.Drawing.Point(34, 30);
+            this.lb_question.Name = "lb_question";
+            this.lb_question.Size = new System.Drawing.Size(261, 25);
+            this.lb_question.TabIndex = 0;
+            this.lb_question.Text = "Đâu là thủ đô của Nhật Bản?";
             // 
             // button1
             // 
@@ -90,6 +91,7 @@
             this.button2.TabIndex = 3;
             this.button2.Text = "B. Pari";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
@@ -101,6 +103,7 @@
             this.button3.TabIndex = 4;
             this.button3.Text = "C. Kyoto";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
@@ -114,11 +117,23 @@
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
+            // button5
+            // 
+            this.button5.BackColor = System.Drawing.Color.Yellow;
+            this.button5.Location = new System.Drawing.Point(577, 186);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(132, 53);
+            this.button5.TabIndex = 6;
+            this.button5.Text = "Tiếp theo";
+            this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
             // PlayForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1214, 656);
+            this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
@@ -139,10 +154,11 @@
 
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lb_question;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button5;
     }
 }
